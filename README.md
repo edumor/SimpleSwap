@@ -72,7 +72,7 @@ The project has been successfully verified:
 | **Block Number** | 8648206 |
 | **Timestamp** | Jun-28-2025 03:13:36 PM UTC |
 
-### 🧪 **Tests Performed by University Verifier**
+### 🧪 **Tests Performed Verifier**
 1. ✅ **addLiquidity()** - Liquidity addition functionality
 2. ✅ **getPrice()** - Price calculation accuracy  
 3. ✅ **getAmountOut()** - Output amount calculations
