@@ -6,7 +6,7 @@
 ![Verified](https://img.shields.io/badge/Contract-Verified-green?style=flat-square)
 ![University](https://img.shields.io/badge/University-Verified-success?style=flat-square)
 
-A minimal, zero-fee Automated Market Maker (AMM) implementation similar to Uniswap, built for educational purposes and university examination. Successfully deployed and verified on Sepolia testnet.
+A minimal, zero-fee Automated Market Maker (AMM) implementation similar to Uniswap, Successfully deployed and verified on Sepolia testnet.
 
 ## � Project Overview
 
