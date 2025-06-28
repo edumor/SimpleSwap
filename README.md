@@ -59,9 +59,9 @@ SimpleSwap/
 | **Verification Status** | ✅ [Verified on Etherscan](https://sepolia.etherscan.io/address/0xD9F19b47c1Ad33C8dfa7f21fD7915Ac7BF1f6B5f#code) |
 | **Purpose** | Test token for AMM operations |
 
-## ✅ University Verification
+## ✅ Coden Verification
 
-### 🏛️ **Academic Verification System**
+### 🏛️ **ETH-KIPU**
 The project has been successfully verified by the university's automated verification system:
 
 | Property | Value |
@@ -84,7 +84,7 @@ The project has been successfully verified by the university's automated verific
 - amountA: 1,000,000,000,000,000,000 (1 ETH)
 - amountB: 1,000,000,000,000,000,000 (1 ETH)  
 - amountIn: 500,000,000,000,000,000 (0.5 ETH)
-- Author: "Student Implementation"
+- Author: "Eduardo Moreno"
 ```
 
 ## 🏗️ Technical Architecture
@@ -193,7 +193,7 @@ console.log(`Price: ${ethers.utils.formatEther(price)} TokenB per TokenA`);
 - **Comprehensive Documentation**: Full NatSpec comments in English
 - **University Grade**: Passes academic verification requirements
 
-### 🎓 **Educational Value**
+### 🎓 **ETH-KIPU Value**
 This project demonstrates:
 - **DeFi Primitives**: Core decentralized finance concepts
 - **Smart Contract Development**: Best practices in Solidity
@@ -209,14 +209,14 @@ This project demonstrates:
 - ✅ **Token sorting**: Consistent pair ordering to prevent errors
 - ✅ **Mathematical precision**: Accurate calculations with proper rounding
 
-### Educational Simplifications
+###  Simplifications
 - ⚠️ **Fixed liquidity rewards**: Simplified to 1000 tokens for educational clarity
 - ⚠️ **No slippage protection**: Parameters present but unused for simplicity
 - ⚠️ **No deadline enforcement**: Simplified for academic purposes
 
-## 📚 Academic Context
+## 📚 ETH-KIPU Context
 
-### University Requirements Met
+### Requirements Met
 - ✅ **Zero-fee implementation**: Required by academic specification
 - ✅ **Complete interface**: All required functions implemented
 - ✅ **English documentation**: Full NatSpec comments
@@ -231,15 +231,14 @@ This project demonstrates:
 
 ## 📞 Project Information
 
-**Academic Project**: University Blockchain Development Course  
 **Implementation Date**: June 28, 2025  
 **Network**: Sepolia Testnet  
-**Verification**: University-approved automated testing system  
+
 
 **Key Links:**
 - [SimpleSwap Contract](https://sepolia.etherscan.io/address/0x56D856c058a07001a646A8a347CA5Fd498766360)
 - [Verification Transaction](https://sepolia.etherscan.io/tx/0x8472fa75b50700c0111458c8c8031fe935f9e62ad4b8d1dc631773a440c0449d)
-- [University Verifier](https://sepolia.etherscan.io/address/0x9f8F02DAB384DDdf1591C3366069Da3Fb0018220)
+- [Verifier](https://sepolia.etherscan.io/address/0x9f8F02DAB384DDdf1591C3366069Da3Fb0018220)
 
 ## 📄 License
 
@@ -247,6 +246,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-**Built for educational purposes | University Blockchain Development Course | 2025**
 
 *This implementation successfully demonstrates core AMM functionality with zero trading fees, as verified by the university's automated testing system.*
