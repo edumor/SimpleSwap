@@ -10,7 +10,7 @@ A minimal, zero-fee Automated Market Maker (AMM) implementation similar to Unisw
 
 ## � Project Overview
 
-SimpleSwap is an educational implementation of an Automated Market Maker that demonstrates core DeFi concepts:
+SimpleSwap is an ETH-KIPU implementation of an Automated Market Maker that demonstrates core DeFi concepts:
 - **Zero-fee token swapping** using constant product formula (x * y = k)
 - **Liquidity provision** with proportional rewards
 - **Price discovery** through mathematical calculations
@@ -53,10 +53,10 @@ SimpleSwap/
 ### 🪙 **TokenB (Test Token)**
 | Property | Value |
 |----------|-------|
-| **Contract Address** | [`0xD9F19b47c1Ad33C8dfa7f21fD7915Ac7BF1f6B5f`](https://sepolia.etherscan.io/address/0xD9F19b47c1Ad33C8dfa7f21fD7915Ac7BF1f6B5f) |
+| **Contract Address** | [`0x99Cd59d18C1664Ae32baA1144E275Eee34514115`](https://sepolia.etherscan.io/address/0x99Cd59d18C1664Ae32baA1144E275Eee34514115) |
 | **Type** | ERC20 Token |
 | **Network** | Sepolia Testnet |
-| **Verification Status** | ✅ [Verified on Etherscan](https://sepolia.etherscan.io/address/0xD9F19b47c1Ad33C8dfa7f21fD7915Ac7BF1f6B5f#code) |
+| **Verification Status** | ✅ [Verified on Etherscan](https://sepolia.etherscan.io/address/0x99Cd59d18C1664Ae32baA1144E275Eee34514115#code) |
 | **Purpose** | Test token for AMM operations |
 
 ## ✅ Coden Verification
@@ -210,9 +210,9 @@ This project demonstrates:
 - ✅ **Mathematical precision**: Accurate calculations with proper rounding
 
 ###  Simplifications
-- ⚠️ **Fixed liquidity rewards**: Simplified to 1000 tokens for educational clarity
+- ⚠️ **Fixed liquidity rewards**: Simplified to 1000 tokens for ETH-KIPU clarity
 - ⚠️ **No slippage protection**: Parameters present but unused for simplicity
-- ⚠️ **No deadline enforcement**: Simplified for academic purposes
+- ⚠️ **No deadline enforcement**: Simplified for ETH-KIPU purposes
 
 ## 📚 ETH-KIPU Context
 
