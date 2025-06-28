@@ -5,7 +5,7 @@ pragma solidity ^0.8.20;
  * @title SimpleSwap
  * @notice A minimal automated market maker (AMM) for token swapping without fees
  * @dev Implements a constant product formula similar to Uniswap but without trading fees
- * @author Student Implementation for University Exam
+ * @author Eduardo Moreno
  */
 contract SimpleSwap {
     
