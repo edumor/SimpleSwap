@@ -53,11 +53,11 @@ SimpleSwap/
 ### 🪙 **TokenB (Test Token)**
 | Property | Value |
 |----------|-------|
-| **Contract Address** | [`0xD9F19b47c1Ad33C8dfa7f21fD7915Ac7BF1f6B5f`](https://sepolia.etherscan.io/address/0xD9F19b47c1Ad33C8dfa7f21fD7915Ac7BF1f6B5f) |
+| **Contract Address** | [`0xD9F19b47c1Ad33C8dfa7f21fD7915Ac7BF1f6B5f`|
+(https://sepolia.etherscan.io/address/0x99Cd59d18C1664Ae32baA1144E275Eee34514115) |
 | **Type** | ERC20 Token |
 | **Network** | Sepolia Testnet |
 | **Verification Status** | ✅ [Verified on Etherscan](https://sepolia.etherscan.io/address/0xD9F19b47c1Ad33C8dfa7f21fD7915Ac7BF1f6B5f#code)
-https://sepolia.etherscan.io/address/0x99Cd59d18C1664Ae32baA1144E275Eee34514115#code|
 | **Purpose** | Test token for AMM operations |
 
 ## ✅ Coden Verification
