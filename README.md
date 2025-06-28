@@ -191,7 +191,7 @@ console.log(`Price: ${ethers.utils.formatEther(price)} TokenB per TokenA`);
 - **Gas Optimization**: Efficient contract design with 200 optimization runs
 - **ERC20 Compatibility**: Works with standard ERC20 tokens
 - **Comprehensive Documentation**: Full NatSpec comments in English
-- **University Grade**: Passes academic verification requirements
+- **ETH-KIPU Grade**: Passes academic verification requirements
 
 ### 🎓 **ETH-KIPU Value**
 This project demonstrates:
