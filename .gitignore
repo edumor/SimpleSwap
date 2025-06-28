@@ -1,0 +1,88 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+build/
+dist/
+artifacts/
+cache/
+typechain/
+typechain-types/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Hardhat
+cache/
+artifacts/
+coverage/
+coverage.json
+gasReporterOutput.json
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Private keys and sensitive data
+*.key
+*.pem
+private.txt
+secrets.json
+
+# Test files (keeping only deployed contracts)
+test/
+scripts/
+deploy*.js
+hardhat.config.js
+package*.json
+
+# Unnecessary contract versions
+*_Flattened.sol
+*_Corrected.sol
+*_Fixed.sol
+*_Simple.sol
+*_Final.sol
+*_Clean.sol
+*_Perfect.sol
+*_WORKS.sol
+*_Optimized.sol
+*_Compatible.sol
+*_Deploy.sol
+*_Complete.sol
+TestVerifier*.sol
+IERC20*.sol
+ERC20_Test.sol
+
+# Documentation drafts
+*.txt
+CONFIGURAR_ENV.md
+Diagnostico_Error.md
+Guia_Verificacion.md
+PLAN_*.md
+Plan_*.md
+README_*.md
+REPORTE_*.md
+Reporte_*.md
+SOLUCION_*.md
+RESUMEN_*.md
+
+# Only keep: SimpleSwap.sol, TokenA.sol, TokenB.sol, README.md
