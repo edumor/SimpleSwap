@@ -62,7 +62,7 @@ SimpleSwap/
 ## ✅ Coden Verification
 
 ### 🏛️ **ETH-KIPU**
-The project has been successfully verified by the university's automated verification system:
+The project has been successfully verified:
 
 | Property | Value |
 |----------|-------|
