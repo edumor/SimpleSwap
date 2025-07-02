@@ -3,7 +3,7 @@
 ![Solidity](https://img.shields.io/badge/Solidity-^0.8.20-363636?style=flat-square&logo=solidity)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)
 ![Network](https://img.shields.io/badge/Network-Sepolia-orange?style=flat-square)
-![University](https://img.shields.io/badge/University-Final_Project-success?style=flat-square)
+
 
 A simple and efficient Automated Market Maker (AMM) implementation that replicates basic Uniswap functionality without external dependencies.
 
