@@ -276,13 +276,6 @@ Contributions are welcome! Please follow these steps:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact
-
-For questions or support:
-- **University Project**: Module 3 Final Assignment
-- **Purpose**: Educational DeFi Implementation
-- **Assessment**: Sepolia Testnet Deployment
-
 ---
 ### 🎯 **SimpleSwap Contract (Main AMM)**
 | Property | Value |
