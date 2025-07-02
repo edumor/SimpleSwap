@@ -284,6 +284,18 @@ For questions or support:
 - **Assessment**: Sepolia Testnet Deployment
 
 ---
+### 🎯 **SimpleSwap Contract (Main AMM)**
+| Property | Value |
+|----------|-------|
+| **Contract Address** | [`0x13f7C492F568EEE5F809e46f0806F279BD243c82`](https://sepolia.etherscan.io/address/0x13f7C492F568EEE5F809e46f0806F279BD243c82) |
+| **Type** | AMM Contract |
+| **Network** | Sepolia Testnet |
+| **Compiler** | Solidity v0.8.20+commit.a1b79de6 |
+| **Optimization** | Enabled (200 runs) |
+| **License** | MIT |
+| **Verification Status** | ✅ [Verified on Etherscan](https://sepolia.etherscan.io/address/0x13f7C492F568EEE5F809e46f0806F279BD243c82#code) |
+| **Purpose** | Main AMM implementation |
+
 
 **⚠️ Disclaimer**: This is an educational project for university coursework. Use in production environments requires additional security audits and testing.
 | **Optimization** | Enabled (200 runs) |
