@@ -261,8 +261,7 @@ This project demonstrates:
 
 - **TokenA**: ERC20 test token for trading pairs
 - **TokenB**: ERC20 test token for trading pairs
-- **Verification Contract**: University assessment tool
-
+- **Verification Contract**: ETH-KIPU
 ## 🤝 Contributing
 
 Contributions are welcome! Please follow these steps:
