@@ -1,5 +1,5 @@
 /**
- *Submitted for verification at Etherscan.io on 2025-07-02
+ *Submitted for verification at Etherscan.io on 2025-07-03
 */
 
 // SPDX-License-Identifier: MIT
@@ -69,6 +69,76 @@ contract SimpleSwap {
     }
 
     /**
+     * @notice Internal function to update reserves when adding liquidity
+     * @dev Updates reserves for both tokens in the pair
+     */
+    function _updateReservesAdd(
+        address tokenA,
+        address tokenB,
+        uint256 amountA,
+        uint256 amountB
+    ) internal {
+        reserves[tokenA][tokenB] += amountA;
+        reserves[tokenB][tokenA] += amountB;
+    }
+
+    /**
+     * @notice Internal function to update liquidity balances when adding liquidity
+     * @dev Updates user's liquidity balance and total liquidity
+     */
+    function _updateLiquidityAdd(
+        address tokenA,
+        address tokenB,
+        address to,
+        uint256 liquidity
+    ) internal {
+        liquidityBalances[tokenA][tokenB][to] += liquidity;
+        totalLiquidity[tokenA][tokenB] += liquidity;
+    }
+
+    /**
+     * @notice Internal function to update reserves when removing liquidity
+     * @dev Updates reserves for both tokens in the pair
+     */
+    function _updateReservesRemove(
+        address tokenA,
+        address tokenB,
+        uint256 amountA,
+        uint256 amountB
+    ) internal {
+        reserves[tokenA][tokenB] -= amountA;
+        reserves[tokenB][tokenA] -= amountB;
+    }
+
+    /**
+     * @notice Internal function to update liquidity balances when removing liquidity
+     * @dev Updates user's liquidity balance and total liquidity
+     */
+    function _updateLiquidityRemove(
+        address tokenA,
+        address tokenB,
+        address user,
+        uint256 liquidity
+    ) internal {
+        liquidityBalances[tokenA][tokenB][user] -= liquidity;
+        totalLiquidity[tokenA][tokenB] -= liquidity;
+    }
+
+    /**
+     * @notice Internal function to update reserves during a swap
+     * @dev Updates reserves for both tokens involved in the swap
+     */
+    function _updateReservesSwap(
+        address tokenIn,
+        address tokenOut,
+        uint256 amountIn,
+        uint256 amountOut
+    ) internal {
+        reserves[tokenIn][tokenOut] += amountIn;
+        reserves[tokenOut][tokenIn] -= amountOut;
+    }
+
+    /**
      * @notice Adds liquidity to a token pair pool
      * @dev Transfers tokens from user to contract and mints liquidity tokens
      * @param tokenA Address of the first token
@@ -102,10 +172,8 @@ contract SimpleSwap {
         _transferFrom(tokenA, msg.sender, address(this), amountADesired);
         _transferFrom(tokenB, msg.sender, address(this), amountBDesired);
 
-        reserves[tokenA][tokenB] += amountADesired;
-        reserves[tokenB][tokenA] += amountBDesired;
-        liquidityBalances[tokenA][tokenB][to] += liquidity;
-        totalLiquidity[tokenA][tokenB] += liquidity;
+        _updateReservesAdd(tokenA, tokenB, amountADesired, amountBDesired);
+        _updateLiquidityAdd(tokenA, tokenB, to, liquidity);
 
         emit LiquidityAction(tokenA, tokenB, amountADesired, amountBDesired, liquidity, true);
         return (amountADesired, amountBDesired, liquidity);
@@ -140,10 +208,8 @@ contract SimpleSwap {
         amountB = (liquidity * reserves[tokenB][tokenA]) / totalLiq;
         require(amountA >= amountAMin && amountB >= amountBMin, "SimpleSwap: INSUFFICIENT_AMOUNT");
 
-        liquidityBalances[tokenA][tokenB][msg.sender] -= liquidity;
-        totalLiquidity[tokenA][tokenB] -= liquidity;
-        reserves[tokenA][tokenB] -= amountA;
-        reserves[tokenB][tokenA] -= amountB;
+        _updateLiquidityRemove(tokenA, tokenB, msg.sender, liquidity);
+        _updateReservesRemove(tokenA, tokenB, amountA, amountB);
 
         _transfer(tokenA, to, amountA);
         _transfer(tokenB, to, amountB);
@@ -166,7 +232,7 @@ contract SimpleSwap {
         address[] calldata path,
         address to,
         uint256 deadline
-    ) external {
+    ) external returns (uint256[] memory amounts) {
         require(block.timestamp <= deadline, "SimpleSwap: EXPIRED");
         require(path.length == 2, "SimpleSwap: INVALID_PATH");
 
@@ -176,9 +242,12 @@ contract SimpleSwap {
         require(amountOut >= amountOutMin, "SimpleSwap: INSUFFICIENT_OUTPUT_AMOUNT");
 
         _transferFrom(tokenIn, msg.sender, address(this), amountIn);
-        reserves[tokenIn][tokenOut] += amountIn;
-        reserves[tokenOut][tokenIn] -= amountOut;
+        _updateReservesSwap(tokenIn, tokenOut, amountIn, amountOut);
         _transfer(tokenOut, to, amountOut);
+
+        amounts = new uint256[](2);
+        amounts[0] = amountIn;
+        amounts[1] = amountOut;
 
         emit Swap(tokenIn, tokenOut, amountIn, amountOut);
     }
