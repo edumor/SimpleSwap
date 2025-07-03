@@ -182,4 +182,4 @@ Successfully passed all verification tests including:
 This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
-Developed as part of ETH-KIPU Ethereum Developer Training Program.
+Eduardo Moreno
